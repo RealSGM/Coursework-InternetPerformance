@@ -1,0 +1,14 @@
+--2024-03-28 08:05:08--  http://ftp.ru.debian.org/debian/indices/override.bookworm.main.src.gz
+Resolving ftp.ru.debian.org (ftp.ru.debian.org)... 85.143.112.112
+Connecting to ftp.ru.debian.org (ftp.ru.debian.org)|85.143.112.112|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 194293 (190K) [application/octet-stream]
+Saving to: ‘Dump/override.bookworm.main.src.gz’
+
+     0K .......... .......... .......... .......... .......... 26%  470K 0s
+    50K .......... .......... .......... .......... .......... 52%  832K 0s
+   100K .......... .......... .......... .......... .......... 79% 73.3M 0s
+   150K .......... .......... .......... .........            100%  807K=0.2s
+
+2024-03-28 08:05:08 (877 KB/s) - ‘Dump/override.bookworm.main.src.gz’ saved [194293/194293]
+

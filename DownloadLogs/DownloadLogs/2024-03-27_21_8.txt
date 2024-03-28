@@ -1,0 +1,13 @@
+--2024-03-27 21:05:09--  http://ftp.ru.debian.org/debian/pool/main/libs/libsecp256k1/libsecp256k1-dev_0.1~20170810-2_arm64.deb
+Resolving ftp.ru.debian.org (ftp.ru.debian.org)... 85.143.112.112
+Connecting to ftp.ru.debian.org (ftp.ru.debian.org)|85.143.112.112|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 112780 (110K) [application/octet-stream]
+Saving to: ‘Dump/libsecp256k1-dev_0.1~20170810-2_arm64.deb’
+
+     0K .......... .......... .......... .......... .......... 45%  445K 0s
+    50K .......... .......... .......... .......... .......... 90%  902K 0s
+   100K ..........                                            100%  190K=0.2s
+
+2024-03-27 21:05:10 (498 KB/s) - ‘Dump/libsecp256k1-dev_0.1~20170810-2_arm64.deb’ saved [112780/112780]
+

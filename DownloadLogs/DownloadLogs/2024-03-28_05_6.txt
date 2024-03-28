@@ -1,0 +1,15 @@
+--2024-03-28 05:05:08--  http://ftp.ru.debian.org/debian/indices/override.sid.main.src.gz
+Resolving ftp.ru.debian.org (ftp.ru.debian.org)... 85.143.112.112
+Connecting to ftp.ru.debian.org (ftp.ru.debian.org)|85.143.112.112|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 208992 (204K) [application/octet-stream]
+Saving to: ‘Dump/override.sid.main.src.gz’
+
+     0K .......... .......... .......... .......... .......... 24%  473K 0s
+    50K .......... .......... .......... .......... .......... 48%  851K 0s
+   100K .......... .......... .......... .......... .......... 73% 76.4M 0s
+   150K .......... .......... .......... .......... .......... 97%  956K 0s
+   200K ....                                                  100% 43.1M=0.2s
+
+2024-03-28 05:05:08 (938 KB/s) - ‘Dump/override.sid.main.src.gz’ saved [208992/208992]
+

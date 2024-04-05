@@ -1,0 +1,20 @@
+PING pantheon-systems.map.fastly.net (146.75.74.133) 56(84) bytes of data.
+
+--- pantheon-systems.map.fastly.net ping statistics ---
+120 packets transmitted, 120 received, 0% packet loss, time 119180ms
+rtt min/avg/max/mdev = 5.226/5.650/8.919/0.608 ms
+PING p3ureb8hc.cdn2.mlycdn.com (99.84.9.111) 56(84) bytes of data.
+
+--- p3ureb8hc.cdn2.mlycdn.com ping statistics ---
+120 packets transmitted, 120 received, 0% packet loss, time 119201ms
+rtt min/avg/max/mdev = 6.271/6.939/37.275/2.837 ms
+PING uom.squizedge.cloud (104.18.16.217) 56(84) bytes of data.
+
+--- uom.squizedge.cloud ping statistics ---
+120 packets transmitted, 120 received, 0% packet loss, time 119213ms
+rtt min/avg/max/mdev = 11.640/12.182/24.189/1.705 ms
+PING www5.usp.br (200.144.248.54) 56(84) bytes of data.
+
+--- www5.usp.br ping statistics ---
+120 packets transmitted, 120 received, 0% packet loss, time 119053ms
+rtt min/avg/max/mdev = 141.093/141.568/144.283/0.427 ms

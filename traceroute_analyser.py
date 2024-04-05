@@ -65,45 +65,14 @@ def loop_through_files(folder='TraceRouteLogs'):
                 output[file] = hops
 
 def save_to_csv(output):
-    with open('output.csv', mode='w', newline='') as file:
+    with open('traceroute_results.csv', mode='w', newline='') as file:
         writer = csv.writer(file)
         writer.writerow(['File', 'Address', 'Hop', 'IP', 'Average Time'])
         for file, hops in output.items():
             for address, hop_list in hops.items():
                 for hop in hop_list:
                     writer.writerow([file, address, hop['hop'], hop['ip'], hop['average_time']])
-                    
 
 if __name__ == '__main__':
     loop_through_files()
     save_to_csv(output)
-    
-    # Print out neatly with labels
-    # for file, hops in output.items():
-    #     print(f'File: {file}')
-    #     for address, hop_list in hops.items():
-    #         print(f'\tAddress: {address}')
-    #         for hop in hop_list:
-    #             print(f'\t\tHop: {hop["hop"]}, Address: {hop["address"]}, IP: {hop["ip"]}, Average Time: {hop["average_time"]}')
-    #         print()
-            
-'''
-    output format
-    output = {
-        'file1.txt': {
-            'www.harvard.edu': [
-                {
-                    'hop': 1,
-                    'address': 'www.com',
-                    'ip': '0.0.0.0',
-                    'average_time': 0.0
-            }
-        ]
-    }
-'''
-
-'''
-    csv format
-    File, Address, Hop, IP, Average Time   
-    file1.txt, www.harvard.edu, 1, 0.0.0.0, 0.0
-'''

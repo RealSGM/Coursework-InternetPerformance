@@ -58,16 +58,16 @@ def main(path):
                 folium.CircleMarker(
                     [latitude, longitude], 
                     popup = location,
-                    radius = 2,
+                    radius = 1,
                     fill = True,
-                    color = "red",
+                    color = "black",
                     fill_color = "red",
                 ).add_to(m)
                 
                 coordinates.append([latitude, longitude])
                 
         # Add lines between markers
-        folium.PolyLine(coordinates, color="blue", weight=2.5, opacity=1).add_to(m)
+        folium.PolyLine(coordinates, color="red", weight=2.5, opacity=1).add_to(m)
                 
         address = address.split('.')[1]
         file_name = f'{file}_{address}.html'

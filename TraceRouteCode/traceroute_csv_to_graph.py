@@ -11,6 +11,14 @@ reader_city = geoip2.database.Reader(folder+'/GeoLite2-City.mmdb')
 
 custom_icon_path = folder+'/custom_icon.png'
 
+ip_addresses = {
+    "www.fmprc.gov.cn": {}, 
+    "www.gov.scot": {}, 
+    "www.gov.za": {}, 
+    "www5.usp.br": {}
+}
+
+
 ip_lookup = {}
 
 def get_coordinates(ip_address):

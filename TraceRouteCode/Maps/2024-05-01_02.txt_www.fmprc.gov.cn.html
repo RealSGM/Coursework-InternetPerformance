@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_4ac35d676155a47e2086bc8a1b81efe5 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_4ac35d676155a47e2086bc8a1b81efe5" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_4ac35d676155a47e2086bc8a1b81efe5 = L.map(
+                "map_4ac35d676155a47e2086bc8a1b81efe5",
+                {
+                    center: [0.0, 0.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 2,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_12e165005be31847b870ead3c76dba7d = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_12e165005be31847b870ead3c76dba7d.addTo(map_4ac35d676155a47e2086bc8a1b81efe5);
+        
+    
+            var circle_marker_a8d12a59daf20747bd5f25e1bb367c2d = L.circleMarker(
+                [52.6267, 1.2176],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1, "stroke": true, "weight": 3}
+            ).addTo(map_4ac35d676155a47e2086bc8a1b81efe5);
+        
+    
+        var popup_7cb7321fb74401246006b1a3a25bbf43 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_258a486014419cb812e73ece040e4cd6 = $(`<div id="html_258a486014419cb812e73ece040e4cd6" style="width: 100.0%; height: 100.0%;">Norwich</div>`)[0];
+                popup_7cb7321fb74401246006b1a3a25bbf43.setContent(html_258a486014419cb812e73ece040e4cd6);
+            
+        
+
+        circle_marker_a8d12a59daf20747bd5f25e1bb367c2d.bindPopup(popup_7cb7321fb74401246006b1a3a25bbf43)
+        ;
+
+        
+    
+    
+            var circle_marker_85ece57b00318040e9710f7e22383b92 = L.circleMarker(
+                [51.5043, -0.2211],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1, "stroke": true, "weight": 3}
+            ).addTo(map_4ac35d676155a47e2086bc8a1b81efe5);
+        
+    
+        var popup_0c3a2d539f277b0a076aba0af493da0f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b8532835ac6125226df3705642792c50 = $(`<div id="html_b8532835ac6125226df3705642792c50" style="width: 100.0%; height: 100.0%;">Fulham</div>`)[0];
+                popup_0c3a2d539f277b0a076aba0af493da0f.setContent(html_b8532835ac6125226df3705642792c50);
+            
+        
+
+        circle_marker_85ece57b00318040e9710f7e22383b92.bindPopup(popup_0c3a2d539f277b0a076aba0af493da0f)
+        ;
+
+        
+    
+    
+            var circle_marker_e6a006af5c45e706097d590bc4859b09 = L.circleMarker(
+                [51.4964, -0.1224],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1, "stroke": true, "weight": 3}
+            ).addTo(map_4ac35d676155a47e2086bc8a1b81efe5);
+        
+    
+            var circle_marker_581d9203ade3273bfa4fdff7c82f3789 = L.circleMarker(
+                [51.4964, -0.1224],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1, "stroke": true, "weight": 3}
+            ).addTo(map_4ac35d676155a47e2086bc8a1b81efe5);
+        
+    
+            var circle_marker_f64626d0b175fdbefdce6752279f27ff = L.circleMarker(
+                [51.4964, -0.1224],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1, "stroke": true, "weight": 3}
+            ).addTo(map_4ac35d676155a47e2086bc8a1b81efe5);
+        
+    
+            var circle_marker_c479192629b043d4628147b9a3d8f06b = L.circleMarker(
+                [51.4964, -0.1224],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1, "stroke": true, "weight": 3}
+            ).addTo(map_4ac35d676155a47e2086bc8a1b81efe5);
+        
+    
+            var circle_marker_29053ff269b536528058ffee5d72cb9d = L.circleMarker(
+                [59.3247, 18.056],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1, "stroke": true, "weight": 3}
+            ).addTo(map_4ac35d676155a47e2086bc8a1b81efe5);
+        
+    
+            var circle_marker_2dfc1644ab70c25b4d08db7d60718b7c = L.circleMarker(
+                [59.3247, 18.056],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1, "stroke": true, "weight": 3}
+            ).addTo(map_4ac35d676155a47e2086bc8a1b81efe5);
+        
+    
+            var circle_marker_b6df77ed06508b295943c58494b85fa5 = L.circleMarker(
+                [59.3247, 18.056],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1, "stroke": true, "weight": 3}
+            ).addTo(map_4ac35d676155a47e2086bc8a1b81efe5);
+        
+    
+            var circle_marker_b981a2ae1c7ae1c2a6fb41e67ca35d2d = L.circleMarker(
+                [59.3247, 18.056],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1, "stroke": true, "weight": 3}
+            ).addTo(map_4ac35d676155a47e2086bc8a1b81efe5);
+        
+    
+            var poly_line_6831840490c9dd66b0e1a36f845078ce = L.polyline(
+                [[52.6267, 1.2176], [51.5043, -0.2211], [51.4964, -0.1224], [51.4964, -0.1224], [51.4964, -0.1224], [51.4964, -0.1224], [59.3247, 18.056], [59.3247, 18.056], [59.3247, 18.056], [59.3247, 18.056]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_4ac35d676155a47e2086bc8a1b81efe5);
+        
+</script>
+</html>

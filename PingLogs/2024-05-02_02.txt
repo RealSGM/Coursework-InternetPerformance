@@ -1,0 +1,70 @@
+PING www.theaustralian.com.au (92.123.240.108) 56(84) bytes of data.
+
+--- www.theaustralian.com.au ping statistics ---
+120 packets transmitted, 120 received, 0% packet loss, time 119180ms
+rtt min/avg/max/mdev = 6.292/6.529/7.740/0.194 ms
+PING www.fmprc.gov.cn.wswebpic.com (138.113.149.124) 56(84) bytes of data.
+
+--- www.fmprc.gov.cn.wswebpic.com ping statistics ---
+120 packets transmitted, 120 received, 0% packet loss, time 128201ms
+rtt min/avg/max/mdev = 5.381/6.298/14.356/1.147 ms
+PING www.iisc.ac.in (4.224.55.79) 56(84) bytes of data.
+
+--- www.iisc.ac.in ping statistics ---
+120 packets transmitted, 120 received, 0% packet loss, time 119189ms
+rtt min/avg/max/mdev = 135.372/135.743/144.529/0.911 ms
+PING www.government.ru (95.173.136.162) 56(84) bytes of data.
+
+--- www.government.ru ping statistics ---
+120 packets transmitted, 0 received, 100% packet loss, time 121852ms
+
+PING e11619.dscf.akamaiedge.net (104.82.234.30) 56(84) bytes of data.
+
+--- e11619.dscf.akamaiedge.net ping statistics ---
+120 packets transmitted, 120 received, 0% packet loss, time 119193ms
+rtt min/avg/max/mdev = 6.318/6.548/7.135/0.172 ms
+PING www.gov.za (164.151.129.20) 56(84) bytes of data.
+
+--- www.gov.za ping statistics ---
+120 packets transmitted, 114 received, 5% packet loss, time 119292ms
+rtt min/avg/max/mdev = 167.494/167.717/169.452/0.230 ms
+PING e4073.dscb.akamaiedge.net (104.78.174.60) 56(84) bytes of data.
+
+--- e4073.dscb.akamaiedge.net ping statistics ---
+120 packets transmitted, 120 received, 0% packet loss, time 119194ms
+rtt min/avg/max/mdev = 6.294/6.553/7.637/0.213 ms
+PING www.gov.scot (143.204.194.2) 56(84) bytes of data.
+
+--- www.gov.scot ping statistics ---
+120 packets transmitted, 120 received, 0% packet loss, time 119167ms
+rtt min/avg/max/mdev = 7.076/7.289/7.826/0.132 ms
+PING www.japan.go.jp (18.244.155.92) 56(84) bytes of data.
+
+--- www.japan.go.jp ping statistics ---
+120 packets transmitted, 120 received, 0% packet loss, time 119184ms
+rtt min/avg/max/mdev = 6.245/6.515/15.235/0.815 ms
+PING www.wa.gov (23.185.0.3) 56(84) bytes of data.
+
+--- www.wa.gov ping statistics ---
+120 packets transmitted, 120 received, 0% packet loss, time 119172ms
+rtt min/avg/max/mdev = 5.190/5.435/6.382/0.175 ms
+PING www5.usp.br (200.144.248.54) 56(84) bytes of data.
+
+--- www5.usp.br ping statistics ---
+120 packets transmitted, 120 received, 0% packet loss, time 119138ms
+rtt min/avg/max/mdev = 225.881/226.236/227.328/0.219 ms
+PING usnc-prod-sc-agw.northcentralus.cloudapp.azure.com (52.252.248.152) 56(84) bytes of data.
+
+--- usnc-prod-sc-agw.northcentralus.cloudapp.azure.com ping statistics ---
+120 packets transmitted, 120 received, 0% packet loss, time 119152ms
+rtt min/avg/max/mdev = 98.985/99.229/100.868/0.232 ms
+PING www.president.pl (104.26.11.136) 56(84) bytes of data.
+
+--- www.president.pl ping statistics ---
+120 packets transmitted, 120 received, 0% packet loss, time 119212ms
+rtt min/avg/max/mdev = 11.527/11.887/23.046/1.036 ms
+PING www.invest.gov.tr (104.21.47.186) 56(84) bytes of data.
+
+--- www.invest.gov.tr ping statistics ---
+120 packets transmitted, 120 received, 0% packet loss, time 119209ms
+rtt min/avg/max/mdev = 11.568/11.877/14.857/0.363 ms

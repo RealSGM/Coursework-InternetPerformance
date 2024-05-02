@@ -2,10 +2,19 @@ import os
 import re
 import csv
 
-ip_addresses = {'www.harvard.edu': [], 'www.cuhk.edu.hk': [], 'www.unimelb.edu.au': [], 'www5.usp.br': []}
+ip_addresses = {"www.fmprc.gov.cn": [], "www.gov.scot": [], "www.gov.za": [], "www5.usp.br": []}
 output = {}
 ip_pattern = r'([\d]+\.[\d]+\.[\d]+\.[\d]+|\b(?:[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?\.)+[a-zA-Z]{2,}\b)'
 
+def extract_url_from_traceroute(log_line):
+    # Regular expression pattern to match the URL
+    pattern = r'traceroute to ([\w.-]+)'
+    match = re.search(pattern, log_line)
+    if match:
+        return match.group(1)
+    else:
+        return None
+    
 def remove_duplicates(cleaned_lines):
     ip_count = 0
     filtered_list = []
@@ -25,7 +34,7 @@ def calculate_average_time(cleaned_lines):
         count += 1
     return round(total_time / count, 2)
 
-def process_line(line, hop):
+def process_line(line):
     cleaned_lines = line.split(' ')
     cleaned_lines = [item for item in cleaned_lines if item != 'ms'] # remove ms
     cleaned_lines = [item for item in cleaned_lines if '*' not in item] # remove *
@@ -41,25 +50,30 @@ def process_line(line, hop):
     return hop_dict
 
 def process_log_contents(contents):
-    hops = ip_addresses.copy()
+    # Dictionary to store the hops
+    hops = {}
     current_hop = None
     
+    # Loop through each line in the contents
     for line in contents.split('\n'):
+        # Extract the URL from the traceroute line
         match = re.search(ip_pattern, line)
         if match:
             hop = match.group(0)
-            
+
             if 'traceroute' in line:
                 current_hop = str(hop)
             else:
-                hop_dict = process_line(line, hop)
+                hop_dict = process_line(line)
                 
                 hops[current_hop].append(hop_dict)
     return hops
 
 def loop_through_files(folder='TraceRouteLogs'):
+    # Loop through all the files in the folder
     for file in os.listdir(folder):
         if file.endswith(".txt"):
+            # Open the file and read its contents
             with open(os.path.join(folder, file), 'r') as f:
                 contents = f.read()
                 hops = process_log_contents(contents)
@@ -72,7 +86,8 @@ def save_to_csv(output):
         for file, hops in output.items():
             for address, hop_list in hops.items():
                 for hop in hop_list:
-                    writer.writerow([file, address, hop['hop'], hop['ip'], hop['average_time']])
+                    if address in ip_addresses.keys():
+                        writer.writerow([file, address, hop['hop'], hop['ip'], hop['average_time']])
 
 if __name__ == '__main__':
     loop_through_files()

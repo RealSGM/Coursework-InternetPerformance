@@ -1,6 +1,5 @@
 import pandas as pd
 import geoip2.database
-
 import folium
 
 folder = 'TraceRouteCode'
@@ -69,7 +68,7 @@ def main(path):
         # Add lines between markers
         folium.PolyLine(coordinates, color="red", weight=2.5, opacity=1).add_to(m)
                 
-        address = address.split('.')[1]
+        # address = address.split('.')[1]
         file_name = f'{file}_{address}.html'
         m.save(f'{save_folder}/{file_name}')
         

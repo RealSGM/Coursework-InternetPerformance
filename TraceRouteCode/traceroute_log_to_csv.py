@@ -2,6 +2,7 @@ import os
 import re
 import csv
 
+ip_addresses = {'www.harvard.edu': [], 'www.cuhk.edu.hk': [], 'www.unimelb.edu.au': [], 'www5.usp.br': []}
 output = {}
 ip_pattern = r'([\d]+\.[\d]+\.[\d]+\.[\d]+|\b(?:[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?\.)+[a-zA-Z]{2,}\b)'
 
@@ -40,7 +41,7 @@ def process_line(line, hop):
     return hop_dict
 
 def process_log_contents(contents):
-    hops = {'www.harvard.edu': [], 'www.cuhk.edu.hk': [], 'www.unimelb.edu.au': [], 'www5.usp.br': []}
+    hops = ip_addresses.copy()
     current_hop = None
     
     for line in contents.split('\n'):

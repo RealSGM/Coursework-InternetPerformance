@@ -1,16 +1,28 @@
 import os
 import re
 
+<<<<<<< Updated upstream
 def save_to_csv(pings, filename='ping.csv'):
+=======
+
+def save_to_csv(pings, filename = 'ping.csv'):
+    ip_addresses = ["www.fmprc.gov.cn.wswebpic.com", "www.gov.scot", "www.gov.za", "www5.usp.br"]
+>>>>>>> Stashed changes
     with open(filename, 'w') as f:
         f.write('filename,address,ip,packet_loss,rtt_min,rtt_avg,rtt_max,rtt_mdev\n')
         for file, pings in pings.items():
             for address, ping in pings.items():
+<<<<<<< Updated upstream
                 rtt_min = ping.get('rtt_min', 'N/A')
                 rtt_avg = ping.get('rtt_avg', 'N/A')
                 rtt_max = ping.get('rtt_max', 'N/A')
                 rtt_mdev = ping.get('rtt_mdev', 'N/A')
                 f.write(f"{file},{address},{ping['ip']},{ping['packet_loss']},{rtt_min},{rtt_avg},{rtt_max},{rtt_mdev}\n")
+=======
+                if address in ip_addresses:
+                    print(address)
+                    f.write(f"{file},{address},{ping['ip']},{ping['packet_loss']},{ping['rtt_min']},{ping['rtt_avg']},{ping['rtt_max']},{ping['rtt_mdev']}\n")
+>>>>>>> Stashed changes
 
 def process_packet_loss(line):
     # Extract the packet loss percentage

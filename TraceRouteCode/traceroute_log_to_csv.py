@@ -63,6 +63,8 @@ def process_log_contents(contents):
 
             if 'traceroute' in line:
                 current_hop = str(hop)
+                if current_hop not in hops:
+                    hops[current_hop] = []
             else:
                 hop_dict = process_line(line)
                 

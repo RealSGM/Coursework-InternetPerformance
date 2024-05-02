@@ -1,0 +1,28 @@
+traceroute to www.president.pl (104.26.10.136), 30 hops max, 60 byte packets
+ 1  cmp-0-gw.uea.ac.uk (139.222.0.1)  1.701 ms  1.609 ms  0.980 ms
+ 2  core-from-cmp.uea.ac.uk (10.0.0.1)  3.914 ms  6.608 ms *
+ 3  pfw2-from-core.uea.ac.uk (193.62.92.126)  0.980 ms  0.953 ms  0.885 ms
+ 4  10.11.2.2 (10.11.2.2)  1.196 ms  1.395 ms  1.340 ms
+ 5  ae15.2152.londtw-ban1.ja.net (146.97.130.237)  5.831 ms  5.755 ms  5.456 ms
+ 6  ae26.londtw-sbr2.ja.net (146.97.35.217)  6.205 ms  5.916 ms  5.867 ms
+ 7  ae30.londpg-sbr2.ja.net (146.97.33.5)  23.712 ms  23.676 ms  23.392 ms
+ 8  ae31.erdiss-sbr2.ja.net (146.97.33.22)  10.445 ms  10.359 ms  10.259 ms
+ 9  ae29.manckh-sbr2.ja.net (146.97.33.42)  12.056 ms  11.863 ms  11.807 ms
+10  ae0.manckh-ban2.ja.net (146.97.35.190)  41.340 ms  41.242 ms  41.204 ms
+11  162.158.32.34 (162.158.32.34)  12.423 ms  12.725 ms  12.946 ms
+12  162.158.32.45 (162.158.32.45)  43.858 ms  43.825 ms  43.803 ms
+13  104.26.10.136 (104.26.10.136)  12.049 ms  12.002 ms  11.814 ms
+traceroute to www.invest.gov.tr (172.67.171.208), 30 hops max, 60 byte packets
+ 1  cmp-0-gw.uea.ac.uk (139.222.0.1)  1.065 ms  1.532 ms  1.469 ms
+ 2  core-from-cmp.uea.ac.uk (10.0.0.1)  4.119 ms  7.311 ms  10.377 ms
+ 3  pfw2-from-core.uea.ac.uk (193.62.92.126)  0.691 ms  0.841 ms  0.771 ms
+ 4  10.11.2.2 (10.11.2.2)  0.911 ms  0.840 ms  1.100 ms
+ 5  ae15.2152.londtw-ban1.ja.net (146.97.130.237)  5.580 ms  5.498 ms  5.423 ms
+ 6  ae26.londtw-sbr2.ja.net (146.97.35.217)  5.831 ms  5.525 ms  5.456 ms
+ 7  ae30.londpg-sbr2.ja.net (146.97.33.5)  6.439 ms  6.380 ms  6.320 ms
+ 8  ae31.erdiss-sbr2.ja.net (146.97.33.22)  17.287 ms  17.213 ms  17.141 ms
+ 9  ae29.manckh-sbr2.ja.net (146.97.33.42)  11.600 ms  12.129 ms  12.169 ms
+10  ae0.manckh-ban2.ja.net (146.97.35.190)  12.076 ms  12.016 ms  11.671 ms
+11  162.158.32.34 (162.158.32.34)  38.118 ms  37.977 ms  37.931 ms
+12  162.158.32.45 (162.158.32.45)  12.458 ms  12.411 ms  12.379 ms
+13  172.67.171.208 (172.67.171.208)  11.914 ms  11.851 ms  13.249 ms

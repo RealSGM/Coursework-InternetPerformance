@@ -1,0 +1,14 @@
+traceroute to www.invest.gov.tr (172.67.171.208), 30 hops max, 60 byte packets
+ 1  cmp-0-gw.uea.ac.uk (139.222.0.1)  1.237 ms  1.951 ms  2.081 ms
+ 2  core-from-cmp.uea.ac.uk (10.0.0.1)  4.434 ms *  15.034 ms
+ 3  pfw2-from-core.uea.ac.uk (193.62.92.126)  0.688 ms  0.730 ms  0.709 ms
+ 4  10.11.2.2 (10.11.2.2)  0.969 ms  1.211 ms  1.041 ms
+ 5  ae15.2152.londtw-ban1.ja.net (146.97.130.237)  5.437 ms  5.394 ms  5.715 ms
+ 6  ae26.londtw-sbr2.ja.net (146.97.35.217)  5.643 ms  5.829 ms  5.577 ms
+ 7  ae30.londpg-sbr2.ja.net (146.97.33.5)  6.347 ms  6.256 ms  6.803 ms
+ 8  ae31.erdiss-sbr2.ja.net (146.97.33.22)  10.517 ms  10.329 ms  10.279 ms
+ 9  ae29.manckh-sbr2.ja.net (146.97.33.42)  11.809 ms  11.933 ms  11.729 ms
+10  ae0.manckh-ban2.ja.net (146.97.35.190)  11.676 ms  11.697 ms  11.619 ms
+11  162.158.32.34 (162.158.32.34)  12.722 ms  12.599 ms  12.706 ms
+12  162.158.32.45 (162.158.32.45)  12.424 ms  12.147 ms  15.121 ms
+13  172.67.171.208 (172.67.171.208)  12.155 ms  12.097 ms  11.788 ms

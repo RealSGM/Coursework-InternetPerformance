@@ -1,7 +1,6 @@
 import os
 import re
 
-
 def save_to_csv(pings, filename = 'ping.csv'):
     ip_addresses = ["www.fmprc.gov.cn.wswebpic.com", "www.gov.scot", "www.gov.za", "www5.usp.br"]
     with open(filename, 'w') as f:

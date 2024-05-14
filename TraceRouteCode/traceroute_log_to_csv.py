@@ -2,7 +2,7 @@ import os
 import re
 import csv
 
-ip_addresses = {"www.fmprc.gov.cn": [], "www.gov.scot": [], "www.gov.za": [], "www5.usp.br": []}
+ip_addresses = {"www.fmprc.gov.cn": [], "www.gov.scot": [], "www.gov.za": [], "www5.usp.br": [], "point.mephi.ru": []}
 output = {}
 ip_pattern = r'([\d]+\.[\d]+\.[\d]+\.[\d]+|\b(?:[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?\.)+[a-zA-Z]{2,}\b)'
 
@@ -81,8 +81,8 @@ def loop_through_files(folder='TraceRouteLogs'):
                 hops = process_log_contents(contents)
                 output[file] = hops
 
-def save_to_csv(output):
-    with open('TraceRouteCode/traceroute.csv', mode='w', newline='') as file:
+def save_to_csv(output, filename='traceroute.csv'):
+    with open('TraceRouteCode/' + filename, mode='w', newline='') as file:
         writer = csv.writer(file)
         writer.writerow(['File', 'Address', 'Hop', 'IP', 'Average Time'])
         for file, hops in output.items():
@@ -91,6 +91,15 @@ def save_to_csv(output):
                     if address in ip_addresses.keys():
                         writer.writerow([file, address, hop['hop'], hop['ip'], hop['average_time']])
 
+def file_server_route_checker():
+    with open('TraceRouteCode/file_server_route.txt', 'r') as f:
+        contents = f.read()
+        hops = process_log_contents(contents)
+        output['point.mephi.ru'] = hops
+        save_to_csv(output, 'point.mephi.ru.csv')
+
 if __name__ == '__main__':
-    loop_through_files()
-    save_to_csv(output)
+    file_server_route_checker()
+#     loop_through_files()
+#     save_to_csv(output)
+

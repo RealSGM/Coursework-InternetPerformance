@@ -4,8 +4,11 @@ import folium
 
 folder = 'TraceRouteCode'
 
-save_folder = folder+'/Maps'
-path = folder+'/traceroute.csv'
+# save_folder = folder+'/Maps'
+# path = folder+'/traceroute.csv'
+path = folder+'/russia.csv'
+save_folder = folder+'/Russia'
+
 reader_asn = geoip2.database.Reader(folder+'/GeoLite2-ASN.mmdb')
 reader_city = geoip2.database.Reader(folder+'/GeoLite2-City.mmdb')
 
@@ -14,7 +17,8 @@ ip_addresses = {
     "www.fmprc.gov.cn": {}, 
     "www.gov.scot": {}, 
     "www.gov.za": {}, 
-    "www5.usp.br": {}
+    "www5.usp.br": {},
+    "point.mephi.ru": {}
 }
 
 
